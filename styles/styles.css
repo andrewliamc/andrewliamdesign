@@ -71,6 +71,27 @@ body {
   border-radius: 10px;
 }
 
+/* Main Content Styling  */
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin: 0 0 0 0;
+  font-weight: bold;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+body > main > h1.hello-heading {
+  padding-top: 2rem;
+}
+
+p {
+  display: block;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 /* Footer Links Styling */
 
 .footer {
@@ -123,6 +144,7 @@ body {
     flex-direction: column;
     padding-left: 0.25rem;
     padding-right: 0.25rem;
+    padding: 0.25rem;
     align-items: flex-start;
   }
 
