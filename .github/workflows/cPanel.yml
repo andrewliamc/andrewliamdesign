@@ -1,19 +1,19 @@
-name: Publish Website to CPanel
-on:
-  push:
-    branches:
-      - master
+---
+on: push
+name: 🚀 Deploy website on push
 jobs:
-  FTP-Deploy-Action:
-  name: FTP-Deploy-Action
-  runs-on: ubuntu-latest
-  steps:
-  - uses: actions/checkoutevz.1fe
-    with:
-      fetch-depth: 2
-- name: FTP-Deploy-Action
-  uses: SamKirkland/FTP-Deploy-Action@3.1.1
-  with:
-    ftp-server: ${{ secrets.FTP_SERVER }}
-    ftp-username: ${{ secrets.FTP USERNAME }}
-    ftp-password: ${{ secrets.FTP PASSWORD }}
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ftp.andrewliamdesigns.com
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftp
+          port: 21
