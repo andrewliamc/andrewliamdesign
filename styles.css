@@ -62,3 +62,38 @@ body {
   background-color: #427b18;
   border-radius: 10px;
 }
+
+@media (max-width: 570px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
