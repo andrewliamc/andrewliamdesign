@@ -65,6 +65,26 @@ body {
   border-radius: 10px;
 }
 
+/* Footer Links Styling */
+
+.footer-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer-links li {
+  list-style: none;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #427b18;
+  padding: 0.5rem;
+  border: 0.25rem;
+  display: block;
+}
+
 @media (max-width: 570px) {
   .toggle-button {
     display: flex;
