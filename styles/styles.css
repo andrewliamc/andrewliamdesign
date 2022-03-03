@@ -67,7 +67,7 @@ body {
 
 /* Footer Links Styling */
 
-.footer-links ul {
+.footer-links ul a {
   margin: 0;
   padding: 0;
   display: flex;
