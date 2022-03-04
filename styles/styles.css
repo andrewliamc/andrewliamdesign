@@ -22,9 +22,9 @@ body {
 
 .brand-title {
   font-family: 'Tangerine', cursive;
-  font-weight: 700;
-  font-size: 3.5rem;
-  margin: 0.5rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
   color: #427b18;
 }
 
