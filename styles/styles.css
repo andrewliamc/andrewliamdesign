@@ -73,6 +73,13 @@ body {
 
 /* Main Content Styling  */
 
+body > main > div {
+  display: block;
+  padding-top: 5rem;
+  margin: auto;
+  width: 70%;
+}
+
 h1 {
   display: block;
   font-size: 2em;
